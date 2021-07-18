@@ -57,11 +57,11 @@ public class StaticUpDownFlow {
         conf.setInputFormat(TextInputFormat.class);
         conf.setOutputFormat(TextOutputFormat.class);
 
-//        FileInputFormat.addInputPath(conf, new Path(args[0]));
-//        FileOutputFormat.setOutputPath(conf, new Path(args[1]));
+        FileInputFormat.addInputPath(conf, new Path(args[0]));
+        FileOutputFormat.setOutputPath(conf, new Path(args[1]));
 
-        FileInputFormat.addInputPath(conf, new Path("C:\\Users\\zengliushuan\\Desktop\\HTTP_20130313143750.dat"));
-        FileOutputFormat.setOutputPath(conf, new Path("C:\\Users\\zengliushuan\\Desktop\\result"));
+//        FileInputFormat.addInputPath(conf, new Path("C:\\Users\\zengliushuan\\Desktop\\HTTP_20130313143750.dat"));
+//        FileOutputFormat.setOutputPath(conf, new Path("C:\\Users\\zengliushuan\\Desktop\\result"));
         JobClient.runJob(conf);
     }
 
